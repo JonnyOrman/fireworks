@@ -14,6 +14,10 @@ func NewGinRouterBuilder() *GinRouterBuilder {
 	return this
 }
 
+func (this GinRouterBuilder) AddGet(routePath string, handler gin.HandlerFunc) {
+	this.router.GET(routePath, handler)
+}
+
 func (this GinRouterBuilder) AddPost(routePath string, handler gin.HandlerFunc) {
 	this.router.POST(routePath, handler)
 }
