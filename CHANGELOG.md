@@ -2,25 +2,7 @@
 
 ## v0.1.0
 
-- Added the following types and functions:
-    - ApplicationConfigurationLoader
-    - DataReader
-    - ConfigurationFilePathProvider
-    - ConfigurationFileReader
-    - ConfigurationJsonFileReader
-    - ConfigurationLoader
-    - ConfigurationValueProvider
-    - Configuration
-    - CreateConfigurationValueProvider
-    - EnvironmentValueProvider
-    - FilePathProvider
-    - FileReader
-    - GinPubSubBodyReader
-    - HttpRequestBodyDataReader
-    - IoutilReader
-    - JsonValueProvider
-    - PubSubBody
-    - Reader
-    - RequestHandler
-    - RouterBuilder
-    - ValueProvider
+- Added utilities for:
+    - application building
+    - configuration loading from file or environment
+    - request handling and body parsing
