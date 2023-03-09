@@ -34,7 +34,7 @@ func TestAddGetBuild(t *testing.T) {
 
 	assert.Equal(t, "GET", route.Method)
 	assert.Equal(t, "/", route.Path)
-	assert.Equal(t, "github.com/jonnyorman/fireworks.TestAddGetBuild.func1", route.Handler)
+	assert.Equal(t, "github.com/jonnyorman/fireworks.RequestHandlerMock[...].Handle-fm", route.Handler)
 }
 
 func TestAddPostBuild(t *testing.T) {
@@ -56,5 +56,5 @@ func TestAddPostBuild(t *testing.T) {
 
 	assert.Equal(t, "POST", route.Method)
 	assert.Equal(t, "/", route.Path)
-	assert.Equal(t, "github.com/jonnyorman/fireworks.TestAddPostBuild.func1", route.Handler)
+	assert.Equal(t, "github.com/jonnyorman/fireworks.RequestHandlerMock[...].Handle-fm", route.Handler)
 }
